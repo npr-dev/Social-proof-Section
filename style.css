@@ -113,9 +113,8 @@ header p {
     margin: 0;
     position: static;
     margin: 1em;
-
-    
 }
+
 .card {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -136,14 +135,17 @@ header p {
     align-items: center;
     margin: 0 5em 0 1em;
 }
+
 .info img {
     border-radius: 50%;
     width: 3em;
-    margin-right:1em;
+    margin-right: 1em;
 }
+
 .title {
     padding: 1em;
 }
+
 .title h2, span {
     font-size: 13px;
 }
@@ -157,8 +159,8 @@ header p {
     width: 100%;
     line-height: 25px;
     padding: 0 1em;
-    
 }
+
 /*-----------------------------------------------*/
 
 @media screen and (min-width:1024px) {
@@ -167,11 +169,9 @@ header p {
         margin: 0;
         box-sizing: border-box;
     }
-    
     html {
         height: 100%;
     }
-    
     body {
         font-family: 'Kumbh Sans', sans-serif;
         background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
@@ -188,7 +188,6 @@ header p {
         margin-top: 3em;
         padding: 0 7em;
     }
-    
     header {
         grid-row-start: 1;
         grid-column-start: 1;
@@ -199,53 +198,49 @@ header p {
         justify-content: center;
         flex-direction: column;
         justify-self: baseline;
+        margin: 0;
     }
-    
     header h1 {
         width: 15ch;
         font-weight: 700;
         font-size: 3em;
+        margin: 0;
+        text-align: left;
     }
-    
     header p {
         width: 47ch;
+        text-align: left;
+        margin: 0;
     }
-    
     .ratings {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         grid-row-start: 1;
         grid-column-start: 2;
         grid-row-end: 2;
         grid-column-end: 3;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 100%;
+        margin: 0;
     }
-    
-    .pinkbox {
+    .ratings p {
+        margin-left: 2em;
+        width: 50ch;
+    }
+    #first, #second, #last {
         display: flex;
-        padding: 1em;
-        border-radius: 10px;
-        margin: 0.5em;
+        justify-content: baseline;
+        align-items: center;
+        position: relative;
+        padding-left: 1em;
     }
-    
-    .pinkbox img {
-        margin: 0.2em;
-    }
-    
     #first {
-        position: relative;
-        right: 4em;
+        right: 10%;
     }
-    
-    #second {
-        position: relative;
-        right: 2em;
+    #last {
+        left: 10%;
     }
-    
-    
-    
     .cards {
         grid-row-start: 2;
         grid-column-start: 1;
@@ -259,28 +254,24 @@ header p {
         justify-self: center;
         margin-top: 2em;
     }
-    
     #colton {
         grid-row-start: 1;
         grid-column-start: 1;
         grid-row-end: 2;
         grid-column-end: 2;
     }
-    
     #irene {
         grid-row-start: 1;
         grid-column-start: 2;
         grid-row-end: 2;
         grid-column-end: 3;
     }
-    
     #anne {
         grid-row-start: 1;
         grid-column-start: 3;
         grid-row-end: 2;
         grid-column-end: 4;
     }
-    
     .card {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -293,7 +284,6 @@ header p {
         justify-content: center;
         align-content: center;
     }
-    
     .info {
         grid-row-start: 1;
         grid-column-start: 1;
@@ -303,28 +293,23 @@ header p {
         justify-content: flex-start;
         align-items: center;
     }
-    
     .info img {
         border-radius: 50%;
         width: 4em;
         margin: 1em;
     }
-    
     .title {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
     .info h2 {
         font-size: 15px;
     }
-    
     .info span {
         font-size: 15px;
     }
-    
     .card p {
         grid-row-start: 2;
         grid-column-start: 1;
@@ -335,17 +320,13 @@ header p {
         font-size: 15px;
         margin: 1em;
     }
-    
     #colton, #irene, #anne {
         position: relative;
     }
-    
     #irene {
         top: 1em;
     }
-    
     #anne {
         top: 3em;
     }
-    
 }
